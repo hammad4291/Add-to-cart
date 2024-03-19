@@ -78,7 +78,9 @@ body {
     position: relative;
     bottom: 20%;
     right: -100%;
+    overflow: auto;
     transition: all 3s ease-in-out 3s;
+    border-radius: 1.5rem;
 }
 
 

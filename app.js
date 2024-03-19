@@ -59,7 +59,12 @@ function createElement(element) {
     inventoryBox.style.display="none";
     cartButton.addEventListener( "click" , () => {
         inventoryBox.style.display="block";
-        inventory.style.transform="translateX(-40%)";
+        inventory.style.transform="translateX(-97%)";
+        boxEle = cartButton.parentElement;
+        console.log(cartButton.parentElement);
+        img = boxEle.querySelector("img");
+        cat = boxEle.querySelector(".category");
+        console.log(img);
     })
     goBack.addEventListener( "click" , () => {
         inventoryBox.style.display="none";
