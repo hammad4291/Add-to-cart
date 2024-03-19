@@ -47,6 +47,41 @@ body {
     border: 2px solid rgb(221, 46, 46);
     box-sizing: border-box;
 }
+@keyframes fade-in {
+    0% { opacity: 0; } /* Starting state: fully transparent */
+    100% { opacity: 1; } /* Ending state: fully opaque */
+}
+
+#int-box {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: red;
+    opacity: 0; /* Initial opacity set to 0 */
+    animation: fade-in 0.1s ease-in-out 0s forwards; /* Apply the fade-in animation */
+}
+#go-back {
+    height: 30%;
+    width: 10%;
+    background-color: blue;
+    position: relative;
+    top: 35%;
+    left: 5%;
+    border-radius: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* #inventory {
     position: fixed;
     height: 100%;
