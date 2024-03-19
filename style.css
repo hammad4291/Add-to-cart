@@ -71,7 +71,15 @@ body {
     left: 5%;
     border-radius: 2rem;
 }
-
+#inventory {
+    height: 80%;
+    width: 40%;
+    background-color: antiquewhite;
+    position: relative;
+    bottom: 20%;
+    right: -100%;
+    transition: all 3s ease-in-out 3s;
+}
 
 
 

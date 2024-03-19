@@ -1,6 +1,8 @@
 let body = document.querySelector("body");
 const URL = `https://fakestoreapi.com/products`;
 let inventoryBox = document.querySelector("#int-box");
+let goBack = document.querySelector("#go-back");
+let inventory = document.querySelector("#inventory");
 
 window.addEventListener("load", () => {
     products();
@@ -57,5 +59,9 @@ function createElement(element) {
     inventoryBox.style.display="none";
     cartButton.addEventListener( "click" , () => {
         inventoryBox.style.display="block";
+        inventory.style.transform="translateX(-40%)";
+    })
+    goBack.addEventListener( "click" , () => {
+        inventoryBox.style.display="none";
     })
 }
