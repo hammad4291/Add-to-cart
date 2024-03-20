@@ -60,11 +60,17 @@ function createElement(element) {
     cartButton.addEventListener( "click" , () => {
         inventoryBox.style.display="block";
         inventory.style.transform="translateX(-97%)";
-        boxEle = cartButton.parentElement;
+        boxEle = cartButton.parentElement.cloneNode(true);
         console.log(cartButton.parentElement);
         img = boxEle.querySelector("img");
         cat = boxEle.querySelector(".category");
         tle = boxEle.querySelector(".Title");
+        pri = boxEle.querySelector(".price");
+        rat = boxEle.querySelector(".rating");
+        ele = document.createElement("div");
+        ele.className="element";
+        inventory.append(ele);
+        ele.appendChild(img);
         console.log(img);
     })
     goBack.addEventListener( "click" , () => {
