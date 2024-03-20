@@ -64,6 +64,7 @@ function createElement(element) {
         console.log(cartButton.parentElement);
         img = boxEle.querySelector("img");
         cat = boxEle.querySelector(".category");
+        tle = boxEle.querySelector(".Title");
         console.log(img);
     })
     goBack.addEventListener( "click" , () => {

@@ -81,8 +81,19 @@ body {
     overflow: auto;
     transition: all 3s ease-in-out 3s;
     border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-
+.element
+{
+    width: 90%;
+    height: 14vh;
+    margin-top: 1vh;
+    background-color: brown;
+    border-radius: 0.5rem;
+    padding: 2px;
+}
 
 
 
