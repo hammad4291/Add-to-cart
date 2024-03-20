@@ -71,6 +71,10 @@ function createElement(element) {
         ele.className="element";
         inventory.append(ele);
         ele.appendChild(img);
+        ele.appendChild(cat);
+        ele.appendChild(tle);
+        ele.appendChild(pri);
+        ele.appendChild(rat);
         console.log(img);
     })
     goBack.addEventListener( "click" , () => {
